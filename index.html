@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>My Cool Website</title>
+      <title>My Noti Website</title>
+      <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+      <script>
+        window.OneSignalDeferred = window.OneSignalDeferred || [];
+        OneSignalDeferred.push(async function(OneSignal) {
+          await OneSignal.init({
+            appId: "08abfa5c-3eeb-48f6-96d4-8479a0bca45b",
+          });
+        });
+      </script>
    </head>
    <body>
       <h1>Welcome to my website! ⭐️</h1>
